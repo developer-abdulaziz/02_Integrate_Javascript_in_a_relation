@@ -15,7 +15,7 @@ for(let i = 0; i < liCollection.length; i++){
 
 
 
-//============================
+//getElementsByTagName
 const allHeadings = document.getElementsByTagName('h1');
 /*
 for(let i = 0; i < allHeadings.length; i++){
@@ -30,7 +30,7 @@ for(const element of allHeadings){
 }
 */
 
-//=================
+//getElementById
 // const fruits = document.getElementById('fruits_title');
 // console.log(fruits.innerText='My Tour List');
 
@@ -40,7 +40,7 @@ const fruitsTitle = document.getElementById('fruits_title');
 
 fruitsTitle.innerText = 'Fruits changed by JS'
 
-//============
+//getElementsByClassName
 const places = document.getElementsByClassName('important_places');
 
 /*
