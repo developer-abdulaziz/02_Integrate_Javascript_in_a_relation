@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="comment_container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sunt ullam possimus ad officiis magnam, eos mollitia atque iusto quos ex ratione modi deleniti distinctio cupiditate! Tempore obcaecati commodi nulla?</p>
+        <p>Eveniet recusandae odit vero nobis, dignissimos voluptates, id cumque dicta ea dolorum fugit, saepe tempora culpa! Ad quis repudiandae commodi doloremque possimus quasi praesentium ullam tempora! Ipsa alias aperiam quisquam!</p>
+        <p>Consequatur maiores quae sapiente hic soluta. Dolorem porro tempora, vel pariatur beatae officiis maiores nobis harum ipsam ullam libero explicabo fugit. Cumque, enim. Repellendus laborum ad magnam, voluptate velit molestias.</p>
+    </div>
+    <button id="btn">submit</button>
+    <script>
+        document.getElementById('btn').addEventListener('click', function(){
+           const commentContainer = document.getElementById('comment_container');
+
+           const para = document.createElement('li');
+           para.innerText = 'amar sonar bangla';
+
+           commentContainer.appendChild(para);
+        })
+    </script>
+</body>
+</html>
