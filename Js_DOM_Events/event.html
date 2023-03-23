@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <h1 onclick="alert('h1 onclick check')">Events niye clickbaji</h1>
+    <button onclick="alert(7)">Click Me</button>
+    <br>
+    <br>
+    <button onclick="document.body.style.backgroundColor='green'">Click Me: green</button>
+
+    <button onclick="makeRed()">Click Me: Red</button>
+
+    <button id="make-blue-button">Click Me: blue</button>
+
+    <button id="make-teal-button">Click Me: teal</button>
+
+    <button id="make-goldenrod">Click Me: Golden rod</button>
+
+    <button id="make-hotPink">Click Me: Hot Pink</button>
+
+    <button id="light-orange">Click Me: Orange Color</button>
+    <script src="js/event.js"></script>
+    <script>
+        // function makeRed() {
+        //     document.body.style.backgroundColor = 'red';
+        // }
+
+        /*
+        const blueButton = document.getElementById('make-blue-button');
+        //just set the name of the function
+        blueButton.onclick = makeBlue();
+
+        function makeBlue() {
+            document.body.style.backgroundColor = 'blue';
+        }
+        */
+
+
+        /*
+                const tealButton = document.getElementById('make-teal-button');
+                // console.log(tealButton);
+                tealButton.onclick = function makeTeal() {
+                    document.body.style.backgroundColor = 'teal';
+                }
+        
+       */
+
+        /*
+         const goldenButton = document.getElementById('make-goldenrod');
+         // console.log(goldenButton);
+         goldenButton.addEventListener('click', makeGoldenRod);
+ 
+         function makeGoldenRod(){
+             document.body.style.backgroundColor = 'goldenrod';
+         }
+ 
+         */
+
+
+        /*
+                const hotPinkButton = document.getElementById('make-hotPink');
+                // console.log(hotPinkButton);
+                hotPinkButton.addEventListener('click', function makePink() {
+                    document.body.style.backgroundColor = 'hotpink';
+                })
+        
+        */
+
+
+        document.getElementById('light-orange').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'orange';
+        })
+    </script>
+</body>
+
+</html>
