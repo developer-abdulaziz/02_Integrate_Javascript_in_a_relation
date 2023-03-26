@@ -1,4 +1,26 @@
 /*===================== step 01 ======================*/
+
+document.getElementById('login_submit').addEventListener('click', function(){
+    const emailField = document.getElementById('user_email');
+    const userEmail = emailField.value;
+
+    const passwordField = document.getElementById('user_password');
+    const userPassWord = passwordField.value;
+
+    if(userEmail === 'aziz01911267760@gmail.com' && userPassWord === '12345'){
+        console.log('login form open');
+        window.location.href = 'banking.html';
+    }
+    else{
+        alert('user invalid');
+    }
+
+})
+
+
+
+
+
 /*
 document.getElementById('login-submit').addEventListener('click', function () {
     // console.log('button clicked');
@@ -67,22 +89,3 @@ submitButton.addEventListener('click', function () {
 
 
 
-// document.getElementById('login-submit').addEventListener('click', function () {
-//     // console.log('clicked me please');
-
-//     // get the user email
-//     const emailField = document.getElementById('user-email');
-//     // console.log(emailField.value);
-//     emailField.value;
-
-//     // get the user password
-//     const passwordField = document.getElementById('user-password');
-//     console.log(passwordField.value);
-//     passwordField.value;
-
-//     // check email and password
-//     if (emailField.value == 'aziz01911267760@gmail.com' && passwordField.value == 'secret') {
-//         // console.log('valid user');
-//         window.location.href = 'banking.html';
-//     }
-// })
